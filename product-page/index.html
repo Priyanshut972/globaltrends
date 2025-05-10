@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Sneakers - Product Page</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Shopify Store</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon">🛒</div>
+        </div>
+    </header>
+
+    <main class="product-page container">
+        <div class="product-grid">
+            <!-- Product Gallery Section -->
+            <section class="product-gallery">
+                <div class="main-image">
+                    <img id="main-product-image" src="assets/images/main-products/black-sneakers.jpg" alt="Premium Sneakers">
+                </div>
+                <div class="thumbnail-container">
+                    <div class="thumbnails">
+                        <img src="assets/images/main-products/black-sneakers.jpg" alt="Black Sneakers" class="thumbnail active" data-image="assets/images/main-products/black-sneakers.jpg">
+                        <img src="assets/images/main-products/white-sneakers.jpg" alt="White Sneakers" class="thumbnail" data-image="assets/images/main-products/white-sneakers.jpg">
+                        <img src="assets/images/main-products/blue-sneakers.jpg" alt="Blue Sneakers" class="thumbnail" data-image="assets/images/main-products/blue-sneakers.jpg">
+                        <img src="assets/images/main-products/red-sneakers.jpg" alt="Red Sneakers" class="thumbnail" data-image="assets/images/main-products/red-sneakers.jpg">
+                        <img src="assets/images/main-products/black-sneakers-alt.jpg" alt="Black Sneakers Alternate" class="thumbnail" data-image="assets/images/main-products/black-sneakers-alt.jpg">
+                    </div>
+                    <button class="scroll-btn prev">‹</button>
+                    <button class="scroll-btn next">›</button>
+                </div>
+            </section>
+
+            <!-- Product Details Section -->
+            <section class="product-details">
+                <h1>Premium Running Sneakers</h1>
+                <div class="price">$129.99</div>
+                <div class="reviews">
+                    ★★★★★ <span class="review-count">(42 reviews)</span>
+                </div>
+
+                <!-- Color Variants -->
+                <div class="variant-section">
+                    <h3>Color</h3>
+                    <div class="color-swatches">
+                        <button class="color-swatch black active" data-color="black" data-image="assets/images/main-products/black-sneakers.jpg"></button>
+                        <button class="color-swatch white" data-color="white" data-image="assets/images/main-products/white-sneakers.jpg"></button>
+                        <button class="color-swatch blue" data-color="blue" data-image="assets/images/main-products/blue-sneakers.jpg"></button>
+                        <button class="color-swatch red" data-color="red" data-image="assets/images/main-products/red-sneakers.jpg"></button>
+                    </div>
+                    <button id="compare-colors-btn" class="compare-btn">Compare Colors</button>
+                </div>
+
+                <!-- Size Variants -->
+                <div class="variant-section">
+                    <h3>Size</h3>
+                    <div class="size-options">
+                        <select id="size-select">
+                            <option value="">Select Size</option>
+                            <option value="7">US 7</option>
+                            <option value="8">US 8</option>
+                            <option value="9">US 9</option>
+                            <option value="10">US 10</option>
+                            <option value="11">US 11</option>
+                        </select>
+                        <button id="size-chart-btn" class="size-chart-btn">Size Chart</button>
+                    </div>
+                </div>
+
+                <!-- Add to Cart -->
+                <div class="add-to-cart">
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" value="1" min="1" class="quantity-input">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+
+                <!-- Product Tabs -->
+                <div class="product-tabs">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" data-tab="description">Description</button>
+                        <button class="tab-btn" data-tab="information">Product Information</button>
+                        <button class="tab-btn" data-tab="shipping">Shipping Details</button>
+                    </div>
+                    <div class="tab-content">
+                        <div id="description" class="tab-pane active">
+                            <p>Our premium running sneakers are designed for maximum comfort and performance. Featuring advanced cushioning technology and breathable mesh upper, these shoes will keep you comfortable all day long.</p>
+                        </div>
+                        <div id="information" class="tab-pane">
+                            <ul>
+                                <li><strong>Material:</strong> Breathable mesh with rubber sole</li>
+                                <li><strong>Weight:</strong> 280g per shoe</li>
+                                <li><strong>Technology:</strong> Advanced cushioning system</li>
+                                <li><strong>Care:</strong> Machine washable (cold)</li>
+                            </ul>
+                        </div>
+                        <div id="shipping" class="tab-pane">
+                            <p><strong>Standard Shipping:</strong> 3-5 business days ($5.99)</p>
+                            <p><strong>Express Shipping:</strong> 1-2 business days ($12.99)</p>
+                            <p><strong>Free Shipping:</strong> On orders over $50</p>
+                            <p><strong>Returns:</strong> 30-day free returns</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Product Bundle Section -->
+        <section class="product-bundle">
+            <h2>Buy these together</h2>
+            <div class="bundle-items">
+                <div class="bundle-item">
+                    <img src="assets/images/main-products/black-sneakers.jpg" alt="Premium Sneakers">
+                    <h3>Premium Sneakers</h3>
+                    <div class="price">$129.99</div>
+                </div>
+                <div class="plus-sign">+</div>
+                <div class="bundle-item">
+                    <img src="assets/images/complementary/running-socks.jpg" alt="Running Socks">
+                    <h3>Performance Socks</h3>
+                    <div class="price">$19.99</div>
+                </div>
+                <div class="plus-sign">+</div>
+                <div class="bundle-item">
+                    <img src="assets/images/complementary/shoe-care-kit.jpg" alt="Shoe Care Kit">
+                    <h3>Shoe Care Kit</h3>
+                    <div class="price">$24.99</div>
+                </div>
+            </div>
+            <div class="bundle-total">
+                <div class="total-price">Total: $174.97</div>
+                <div class="savings">You save $15.00</div>
+                <button class="add-bundle-btn">Add Bundle to Cart</button>
+            </div>
+        </section>
+
+        <!-- Pair Well With Section -->
+        <section class="pair-well-with">
+            <h2>Pair Well With</h2>
+            <div class="product-carousel">
+                <div class="product-card">
+                    <img src="assets/images/complementary/running-socks.jpg" alt="Running Socks">
+                    <h3>Performance Socks</h3>
+                    <div class="price">$19.99</div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="assets/images/complementary/shoe-care-kit.jpg" alt="Shoe Care Kit">
+                    <h3>Shoe Care Kit</h3>
+                    <div class="price">$24.99</div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="assets/images/complementary/running-shorts.jpg" alt="Running Shorts">
+                    <h3>Running Shorts</h3>
+                    <div class="price">$34.99</div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="assets/images/complementary/water-bottle.jpg" alt="Water Bottle">
+                    <h3>Sports Water Bottle</h3>
+                    <div class="price">$14.99</div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Related Products Section -->
+        <section class="related-products">
+            <h2>You May Also Like</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <span class="badge">New</span>
+                    <img src="assets/images/related/casual-sneakers.jpg" alt="Casual Sneakers">
+                    <h3>Casual Sneakers</h3>
+                    <div class="price">$99.99</div>
+                </div>
+                <div class="product-card">
+                    <span class="badge popular">Popular</span>
+                    <img src="assets/images/related/hiking-boots.jpg" alt="Hiking Boots">
+                    <h3>Hiking Boots</h3>
+                    <div class="price">$149.99</div>
+                </div>
+                <div class="product-card">
+                    <img src="assets/images/related/slip-on-shoes.jpg" alt="Slip-on Shoes">
+                    <h3>Slip-on Shoes</h3>
+                    <div class="price">$79.99</div>
+                </div>
+                <div class="product-card">
+                    <img src="assets/images/related/training-shoes.jpg" alt="Training Shoes">
+                    <h3>Training Shoes</h3>
+                    <div class="price">$119.99</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Size Chart Modal -->
+    <div id="size-chart-modal" class="modal">
+        <!-- ... (keep the existing modal content) ... -->
+    </div>
+
+    <!-- Compare Colors Modal -->
+    <div id="compare-colors-modal" class="modal">
+        <!-- ... (keep the existing modal content) ... -->
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
