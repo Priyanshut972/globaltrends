@@ -63,6 +63,6 @@ A responsive product page mimicking Shopify storefront functionality built with 
 - `index.html` - Main HTML file
 - `css/styles.css` - All styling
 - `js/script.js` - All JavaScript functionality
-- `assets/images/main-products` - Placeholder product main images
-- `assets/images/complementary` - Placeholder product complementary images
-- `assets/images/related` - Placeholder product related images
+- `assets/images/main-products` - Contains main-product images
+- `assets/images/complementary` - Contains complementary images
+- `assets/images/related` - Contains related images
